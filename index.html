@@ -16,110 +16,61 @@
 <p class="p1">&lt;html lang="zh-CN"&gt;</p>
 <p class="p1">&lt;head&gt;</p>
 <p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
 <p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;PLAN.P STUDIO&lt;/title&gt;</p>
 <p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* ---------- 重置样式 &amp; 基础变量 ---------- */</p>
 <p class="p1"><span class="Apple-converted-space">        </span>* {</p>
 <p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
 <p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
 <p class="p1"><span class="Apple-converted-space">            </span>box-sizing: border-box;</p>
 <p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
 <p class="p1"><span class="Apple-converted-space">        </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;</p>
 <p class="p1"><span class="Apple-converted-space">            </span>background-color: #ffffff;</p>
 <p class="p1"><span class="Apple-converted-space">            </span>color: #1a1a1a;</p>
 <p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.5;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>scroll-behavior: smooth;</p>
 <p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* 黑白灰主色调 */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>:root {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--color-bg: #ffffff;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--color-text: #1a1a1a;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--color-text-light: #555555;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--color-border: #eaeaea;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--color-hover: #000000;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>img {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>height: auto;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>a {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: inherit;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition: opacity 0.2s ease;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>a:hover {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>opacity: 0.6;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
 <p class="p1"><span class="Apple-converted-space">        </span>.container {</p>
 <p class="p1"><span class="Apple-converted-space">            </span>max-width: 1200px;</p>
 <p class="p1"><span class="Apple-converted-space">            </span>margin: 0 auto;</p>
 <p class="p1"><span class="Apple-converted-space">            </span>padding: 0 24px;</p>
 <p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* ---------- 导航栏 ---------- */</p>
 <p class="p1"><span class="Apple-converted-space">        </span>.navbar {</p>
 <p class="p1"><span class="Apple-converted-space">            </span>padding: 32px 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 1px solid var(--color-border);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 1px solid #eaeaea;</p>
 <p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 40px;</p>
 <p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
 <p class="p1"><span class="Apple-converted-space">        </span>.nav-links {</p>
 <p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
 <p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
 <p class="p1"><span class="Apple-converted-space">            </span>gap: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>flex-wrap: wrap;</p>
 <p class="p1"><span class="Apple-converted-space">            </span>list-style: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 0.9rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>letter-spacing: 0.5px;</p>
 <p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
 <p class="p1"><span class="Apple-converted-space">        </span>.nav-links a {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--color-text-light);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #555;</p>
 <p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.nav-links a:hover {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--color-hover);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* ---------- 头部 / 头像与简介 ---------- */</p>
 <p class="p1"><span class="Apple-converted-space">        </span>.hero {</p>
 <p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
 <p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 80px;</p>
 <p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
 <p class="p1"><span class="Apple-converted-space">        </span>.avatar {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 120px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>height: 120px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 150px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 150px;</p>
 <p class="p1"><span class="Apple-converted-space">            </span>border-radius: 50%;</p>
 <p class="p1"><span class="Apple-converted-space">            </span>object-fit: cover;</p>
 <p class="p1"><span class="Apple-converted-space">            </span>margin: 0 auto 24px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid var(--color-border);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid #eaeaea;</p>
 <p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
 <p class="p1"><span class="Apple-converted-space">        </span>.hero h1 {</p>
 <p class="p1"><span class="Apple-converted-space">            </span>font-size: 2.2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 500;</p>
 <p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 16px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>letter-spacing: -0.5px;</p>
 <p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
 <p class="p1"><span class="Apple-converted-space">        </span>.bio {</p>
 <p class="p1"><span class="Apple-converted-space">            </span>max-width: 600px;</p>
 <p class="p1"><span class="Apple-converted-space">            </span>margin: 0 auto;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--color-text-light);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #555;</p>
 <p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* ---------- 作品分类导航 ---------- */</p>
 <p class="p1"><span class="Apple-converted-space">        </span>.category-nav {</p>
 <p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
 <p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
@@ -127,253 +78,177 @@
 <p class="p1"><span class="Apple-converted-space">            </span>gap: 1rem 2rem;</p>
 <p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 60px;</p>
 <p class="p1"><span class="Apple-converted-space">            </span>padding-bottom: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 1px solid var(--color-border);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 1px solid #eaeaea;</p>
 <p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
 <p class="p1"><span class="Apple-converted-space">        </span>.category-btn {</p>
 <p class="p1"><span class="Apple-converted-space">            </span>background: none;</p>
 <p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
 <p class="p1"><span class="Apple-converted-space">            </span>font-size: 0.85rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 400;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--color-text-light);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #555;</p>
 <p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
 <p class="p1"><span class="Apple-converted-space">            </span>padding: 4px 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition: color 0.2s;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>letter-spacing: 0.5px;</p>
 <p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.category-btn:hover,</p>
 <p class="p1"><span class="Apple-converted-space">        </span>.category-btn.active {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--color-hover);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 1px solid var(--color-hover);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #000;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 1px solid #000;</p>
 <p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* ---------- 作品展示网格 ---------- */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.work-section {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 100px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
 <p class="p1"><span class="Apple-converted-space">        </span>.work-grid {</p>
 <p class="p1"><span class="Apple-converted-space">            </span>display: grid;</p>
 <p class="p1"><span class="Apple-converted-space">            </span>grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));</p>
 <p class="p1"><span class="Apple-converted-space">            </span>gap: 40px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 20px;</p>
 <p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.work-card {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition: transform 0.2s ease;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.work-card:hover {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transform: translateY(-4px);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
 <p class="p1"><span class="Apple-converted-space">        </span>.work-card img {</p>
 <p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
 <p class="p1"><span class="Apple-converted-space">            </span>aspect-ratio: 4 / 3;</p>
 <p class="p1"><span class="Apple-converted-space">            </span>object-fit: cover;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 16px;</p>
 <p class="p1"><span class="Apple-converted-space">            </span>background-color: #f5f5f5;</p>
 <p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
 <p class="p1"><span class="Apple-converted-space">        </span>.work-card h3 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 16px 0 6px;</p>
 <p class="p1"><span class="Apple-converted-space">            </span>font-size: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 500;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 6px;</p>
 <p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
 <p class="p1"><span class="Apple-converted-space">        </span>.work-card p {</p>
 <p class="p1"><span class="Apple-converted-space">            </span>font-size: 0.85rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--color-text-light);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #555;</p>
 <p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* ---------- 联系区域 ---------- */</p>
 <p class="p1"><span class="Apple-converted-space">        </span>.contact {</p>
 <p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
 <p class="p1"><span class="Apple-converted-space">            </span>margin: 80px 0;</p>
 <p class="p1"><span class="Apple-converted-space">            </span>padding-top: 40px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-top: 1px solid var(--color-border);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-top: 1px solid #eaeaea;</p>
 <p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.contact a {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--color-text);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 1px solid var(--color-border);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* ---------- 页脚 ---------- */</p>
 <p class="p1"><span class="Apple-converted-space">        </span>.footer {</p>
 <p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
 <p class="p1"><span class="Apple-converted-space">            </span>padding: 40px 0;</p>
 <p class="p1"><span class="Apple-converted-space">            </span>font-size: 0.75rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--color-text-light);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-top: 1px solid var(--color-border);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #555;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-top: 1px solid #eaeaea;</p>
 <p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* 简单响应式 */</p>
 <p class="p1"><span class="Apple-converted-space">        </span>@media (max-width: 768px) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>.container {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>padding: 0 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
 <p class="p1"><span class="Apple-converted-space">            </span>.work-grid {</p>
 <p class="p1"><span class="Apple-converted-space">                </span>gap: 24px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">            </span>.category-nav {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>gap: 0.8rem 1.2rem;</p>
 <p class="p1"><span class="Apple-converted-space">            </span>}</p>
 <p class="p1"><span class="Apple-converted-space">        </span>}</p>
 <p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
 <p class="p1">&lt;/head&gt;</p>
 <p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;nav class="navbar"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;ul class="nav-links"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="#"&gt;WORK&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="#"&gt;ABOUT&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="#"&gt;CONTACT&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/nav&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;main class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- ********** 内容区域 - 请根据说明修改 ********** --&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- 1. 头像与简介 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="hero"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- 修改头像链接：将 src 引号内的网址换成你的图片链接 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;img class="avatar" src="https://cdn.jsdelivr.net/gh/planp-studio/my-pictures@main/阿P-PLANP-LOGO-03.png" alt="头像"style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%;&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- 修改名字 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1&gt;阿P&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- 修改简介文字 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="bio"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;独立插画师、陶艺爱好者，现居深圳。&lt;br&gt;合作包括：喜茶、萨利亚、卓越中心等。&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;nav class="navbar"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;ul class="nav-links"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;a href="#"&gt;WORK&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;a href="#"&gt;ABOUT&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;a href="#"&gt;CONTACT&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</p>
 <p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/nav&gt;</p>
 <p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- 2. 作品分类按钮（共7个分类，可按需修改名称） --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="category-nav" id="categoryNav"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="category-btn active" data-category="illustration"&gt;插画设计&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="category-btn" data-category="comic"&gt;漫画&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="category-btn" data-category="exhibition"&gt;展览&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="category-btn" data-category="brand"&gt;品牌合作&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="category-btn" data-category="merch"&gt;周边设计&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="category-btn" data-category="ceramic"&gt;陶艺&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="category-btn" data-category="other"&gt;其它&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- 3. 作品展示区域（所有分类的作品数据都在这里修改） --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="workContainer" class="work-section"&gt;&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- 4. 联系方式 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="contact"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;联系邮箱：&lt;a href="mailto:planpstudio.@163.com"&gt;your-email@example.com&lt;/a&gt;&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p style="margin-top: 12px;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#"&gt;Instagram&lt;/a&gt; /<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#"&gt;Behance&lt;/a&gt; /<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#"&gt;小红书&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/main&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;footer class="footer"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;© 2026 阿P&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/footer&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>// ********** 作品数据 - 在这里修改、添加、删除你的作品 **********</p>
-<p class="p1"><span class="Apple-converted-space">    </span>// 按照下面的格式，把你每个分类下的作品信息填进去</p>
-<p class="p1"><span class="Apple-converted-space">    </span>const worksData = {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>// 插画设计分类下的作品列表</p>
-<p class="p1"><span class="Apple-converted-space">        </span>illustration: [</p>
-<p class="p1"><span class="Apple-converted-space">            </span>// 每个作品是一个对象，包含标题、描述、图片链接</p>
-<p class="p1"><span class="Apple-converted-space">            </span>{ title: "森林回响", description: "水彩与数字绘画，2024", img: "https://via.placeholder.com/600x450?text=Illustration+1" },</p>
-<p class="p1"><span class="Apple-converted-space">            </span>{ title: "城市漂流", description: "系列插画，为XX杂志创作", img: "https://via.placeholder.com/600x450?text=Illustration+2" },</p>
-<p class="p1"><span class="Apple-converted-space">            </span>{ title: "夜的形状", description: "个人创作，2025", img: "https://via.placeholder.com/600x450?text=Illustration+3" }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>],</p>
-<p class="p1"><span class="Apple-converted-space">        </span>// 漫画分类</p>
-<p class="p1"><span class="Apple-converted-space">        </span>comic: [</p>
-<p class="p1"><span class="Apple-converted-space">            </span>{ title: "日常的奇迹", description: "短篇漫画，12页", img: "https://via.placeholder.com/600x450?text=Comic+1" },</p>
-<p class="p1"><span class="Apple-converted-space">            </span>{ title: "散步", description: "漫画连载于XX刊物", img: "https://via.placeholder.com/600x450?text=Comic+2" }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>],</p>
-<p class="p1"><span class="Apple-converted-space">        </span>// 展览分类</p>
-<p class="p1"><span class="Apple-converted-space">        </span>exhibition: [</p>
-<p class="p1"><span class="Apple-converted-space">            </span>{ title: "杭州艺术书展", description: "2024，展位B08", img: "https://via.placeholder.com/600x450?text=Exhibition+1" },</p>
-<p class="p1"><span class="Apple-converted-space">            </span>{ title: "「柔软的角落」个展", description: "2025，空山美术馆", img: "https://via.placeholder.com/600x450?text=Exhibition+2" }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>],</p>
-<p class="p1"><span class="Apple-converted-space">        </span>// 品牌合作分类</p>
-<p class="p1"><span class="Apple-converted-space">        </span>brand: [</p>
-<p class="p1"><span class="Apple-converted-space">            </span>{ title: "单向空间·文学季", description: "主视觉插画", img: "https://via.placeholder.com/600x450?text=Brand+1" },</p>
-<p class="p1"><span class="Apple-converted-space">            </span>{ title: "观夏·四季诗篇", description: "包装合作", img: "https://via.placeholder.com/600x450?text=Brand+2" }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>],</p>
-<p class="p1"><span class="Apple-converted-space">        </span>// 周边分类</p>
-<p class="p1"><span class="Apple-converted-space">        </span>merch: [</p>
-<p class="p1"><span class="Apple-converted-space">            </span>{ title: "森林系列明信片", description: "2024，独立出版", img: "https://via.placeholder.com/600x450?text=Merch+1" },</p>
-<p class="p1"><span class="Apple-converted-space">            </span>{ title: "陶瓷冰箱贴", description: "手作小物", img: "https://via.placeholder.com/600x450?text=Merch+2" }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>],</p>
-<p class="p1"><span class="Apple-converted-space">        </span>// 陶艺分类</p>
-<p class="p1"><span class="Apple-converted-space">        </span>ceramic: [</p>
-<p class="p1"><span class="Apple-converted-space">            </span>{ title: "云朵茶碗", description: "手捏陶，釉下彩", img: "https://via.placeholder.com/600x450?text=Ceramic+1" },</p>
-<p class="p1"><span class="Apple-converted-space">            </span>{ title: "山形花器", description: "2024，柴烧", img: "https://via.placeholder.com/600x450?text=Ceramic+2" },</p>
-<p class="p1"><span class="Apple-converted-space">            </span>{ title: "月的碎片", description: "陶瓷雕塑系列", img: "https://via.placeholder.com/600x450?text=Ceramic+3" }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>],</p>
-<p class="p1"><span class="Apple-converted-space">        </span>// 其它分类</p>
-<p class="p1"><span class="Apple-converted-space">        </span>other: [</p>
-<p class="p1"><span class="Apple-converted-space">            </span>{ title: "实验动画", description: "短片《呼吸》", img: "https://via.placeholder.com/600x450?text=Other+1" },</p>
-<p class="p1"><span class="Apple-converted-space">            </span>{ title: "拼贴作品", description: "2023-2024", img: "https://via.placeholder.com/600x450?text=Other+2" }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>]</p>
-<p class="p1"><span class="Apple-converted-space">    </span>};</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>// ---------- 下面代码负责显示作品，你不需要修改 ----------</p>
-<p class="p1"><span class="Apple-converted-space">    </span>let currentCategory = 'illustration';</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>function renderWorks(category) {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const container = document.getElementById('workContainer');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const works = worksData[category];</p>
-<p class="p1"><span class="Apple-converted-space">        </span>if (!works || works.length === 0) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>container.innerHTML = '&lt;p style="text-align:center; color:#888;"&gt;暂无作品，请在代码中添加。&lt;/p&gt;';</p>
-<p class="p1"><span class="Apple-converted-space">            </span>return;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>const gridHtml = `</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="work-grid"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>${works.map(work =&gt; `</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="work-card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="${work.img}" alt="${work.title}" loading="lazy"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3&gt;${work.title}&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p&gt;${work.description}&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>`).join('')}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;main class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="hero"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;img class="avatar" src="https://cdn.jsdelivr.net/gh/planp-studio/my-pictures@main/%E9%98%BFP-PLANP-LOGO-03.png" alt="头像"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1&gt;阿P&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="bio"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;独立插画师、陶艺爱好者，现居深圳。&lt;br&gt;合作包括：喜茶、萨利亚、卓越中心等。&lt;/p&gt;</p>
 <p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>`;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>container.innerHTML = gridHtml;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
 <p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>// 分类按钮点击切换</p>
-<p class="p1"><span class="Apple-converted-space">    </span>function initCategoryButtons() {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const buttons = document.querySelectorAll('.category-btn');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>buttons.forEach(btn =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>btn.addEventListener('click', () =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>// 更新按钮样式</p>
-<p class="p1"><span class="Apple-converted-space">                </span>buttons.forEach(b =&gt; b.classList.remove('active'));</p>
-<p class="p1"><span class="Apple-converted-space">                </span>btn.classList.add('active');</p>
-<p class="p1"><span class="Apple-converted-space">                </span>// 更新当前分类并渲染</p>
-<p class="p1"><span class="Apple-converted-space">                </span>currentCategory = btn.getAttribute('data-category');</p>
-<p class="p1"><span class="Apple-converted-space">                </span>renderWorks(currentCategory);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>// 点击后滚动到作品区域</p>
-<p class="p1"><span class="Apple-converted-space">                </span>document.getElementById('workContainer').scrollIntoView({ behavior: 'smooth', block: 'start' });</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="category-nav" id="categoryNav"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="category-btn active" data-category="illustration"&gt;插画设计&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="category-btn" data-category="comic"&gt;漫画&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="category-btn" data-category="exhibition"&gt;展览&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="category-btn" data-category="brand"&gt;品牌合作&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="category-btn" data-category="merch"&gt;周边设计&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="category-btn" data-category="ceramic"&gt;陶艺&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="category-btn" data-category="other"&gt;其它&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="workContainer" class="work-section"&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="contact"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;联系邮箱：&lt;a href="mailto:planpstudio@163.com"&gt;planpstudio@163.com&lt;/a&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p style="margin-top: 12px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#"&gt;Instagram&lt;/a&gt; /<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#"&gt;Behance&lt;/a&gt; /<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#"&gt;小红书&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/main&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer class="footer"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;© 2026 阿P&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const worksData = {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>illustration: [</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ title: "森林回响", description: "水彩与数字绘画，2024", img: "https://via.placeholder.com/600x450?text=Illustration+1" },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ title: "城市漂流", description: "系列插画，为XX杂志创作", img: "https://via.placeholder.com/600x450?text=Illustration+2" },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ title: "夜的形状", description: "个人创作，2025", img: "https://via.placeholder.com/600x450?text=Illustration+3" }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>],</p>
+<p class="p1"><span class="Apple-converted-space">            </span>comic: [</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ title: "日常的奇迹", description: "短篇漫画，12页", img: "https://via.placeholder.com/600x450?text=Comic+1" },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ title: "散步", description: "漫画连载于XX刊物", img: "https://via.placeholder.com/600x450?text=Comic+2" }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>],</p>
+<p class="p1"><span class="Apple-converted-space">            </span>exhibition: [</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ title: "杭州艺术书展", description: "2024，展位B08", img: "https://via.placeholder.com/600x450?text=Exhibition+1" },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ title: "「柔软的角落」个展", description: "2025，空山美术馆", img: "https://via.placeholder.com/600x450?text=Exhibition+2" }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>],</p>
+<p class="p1"><span class="Apple-converted-space">            </span>brand: [</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ title: "单向空间·文学季", description: "主视觉插画", img: "https://via.placeholder.com/600x450?text=Brand+1" },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ title: "观夏·四季诗篇", description: "包装合作", img: "https://via.placeholder.com/600x450?text=Brand+2" }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>],</p>
+<p class="p1"><span class="Apple-converted-space">            </span>merch: [</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ title: "森林系列明信片", description: "2024，独立出版", img: "https://via.placeholder.com/600x450?text=Merch+1" },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ title: "陶瓷冰箱贴", description: "手作小物", img: "https://via.placeholder.com/600x450?text=Merch+2" }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>],</p>
+<p class="p1"><span class="Apple-converted-space">            </span>ceramic: [</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ title: "云朵茶碗", description: "手捏陶，釉下彩", img: "https://via.placeholder.com/600x450?text=Ceramic+1" },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ title: "山形花器", description: "2024，柴烧", img: "https://via.placeholder.com/600x450?text=Ceramic+2" },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ title: "月的碎片", description: "陶瓷雕塑系列", img: "https://via.placeholder.com/600x450?text=Ceramic+3" }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>],</p>
+<p class="p1"><span class="Apple-converted-space">            </span>other: [</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ title: "实验动画", description: "短片《呼吸》", img: "https://via.placeholder.com/600x450?text=Other+1" },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ title: "拼贴作品", description: "2023-2024", img: "https://via.placeholder.com/600x450?text=Other+2" }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>]</p>
+<p class="p1"><span class="Apple-converted-space">        </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>let currentCategory = 'illustration';</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function renderWorks(category) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const container = document.getElementById('workContainer');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const works = worksData[category];</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (!works || works.length === 0) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>container.innerHTML = '&lt;p style="text-align:center; color:#888;"&gt;暂无作品，请在代码中添加。&lt;/p&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">                </span>return;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const gridHtml = `&lt;div class="work-grid"&gt;${works.map(work =&gt; `</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="work-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;img src="${work.img}" alt="${work.title}" loading="lazy"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;${work.title}&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;${work.description}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>`).join('')}&lt;/div&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>container.innerHTML = gridHtml;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function initCategoryButtons() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const buttons = document.querySelectorAll('.category-btn');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>buttons.forEach(btn =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>btn.addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>buttons.forEach(b =&gt; b.classList.remove('active'));</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>btn.classList.add('active');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>currentCategory = btn.getAttribute('data-category');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>renderWorks(currentCategory);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>});</p>
 <p class="p1"><span class="Apple-converted-space">            </span>});</p>
-<p class="p1"><span class="Apple-converted-space">        </span>});</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
 <p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>// 页面加载时显示默认分类</p>
-<p class="p1"><span class="Apple-converted-space">    </span>document.addEventListener('DOMContentLoaded', () =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>initCategoryButtons();</p>
-<p class="p1"><span class="Apple-converted-space">        </span>renderWorks(currentCategory);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>});</p>
-<p class="p1">&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.addEventListener('DOMContentLoaded', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>initCategoryButtons();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>renderWorks(currentCategory);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
 <p class="p1">&lt;/body&gt;</p>
 <p class="p1">&lt;/html&gt;</p>
 </body>
